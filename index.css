@@ -1,9 +1,17 @@
 *{
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
  body{
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,26 +25,34 @@
   backdrop-filter: blur(0.5px);
 }
 .container{
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
-  min-height: 80vh !important;
+  min-height: 50vh !important;
   width: 60vh !important;
+  background-image: url("pexels-instawally-176851.jpg");   
+  background-repeat: no-repeat;      
+  background-size: cover;          
+  background-position: center; 
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 12px 4px black;
 }
 .container img{
   display: block;
   justify-content: center;
   text-align: center;
+  margin-bottom: 5px;
 }
 .container h2{
   color: #fff;
   display: block;
   justify-content: center;
   text-align: center;
-  padding: 8px 0px;
+  padding: 3px 0px;
 }
 form{
   color: #fff;
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 form select {
   background: transparent;
@@ -45,9 +61,11 @@ form select {
 }
 form button , input{
   width: 97%;
-  border: none;
   outline: none;
   border-radius: 0.75rem;
+}
+form button {
+  border-color: 2px solid #000000;
 }
 form input{
   border: 1px solid lightgrey;
@@ -61,6 +79,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-top: 2rem;
+margin-top: 15px;;
 }
 .dropdown i{
  font-size:1rem;
@@ -78,7 +97,7 @@ max-width: 2rem;
   border: 1px solid lightgray;
 }
 .msg{
-  margin: 2rem 0rem;
+  margin:1.5rem 0rem;
   
  display: block;
   justify-content: center;
@@ -90,23 +109,38 @@ form button{
  display: block;
   justify-content: center;
   text-align: center;
- background-color: #b4549d;
+ background-color: #092a5c;
  cursor: pointer;
+ color: #cccccc;
 }
 
 @media only screen and (max-width: 480px) {
 
+  html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
  body{
      display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100%;
   background-image: url("pexels-eberhardgross-2098427.jpg");   
   background-repeat: no-repeat;      
   background-size: cover;          
   background-position: center; 
   background-color: transparent;
   backdrop-filter: blur(0.5px);
+}
+.container{
+  background-image: url("pexels-eberhardgross-2098427.jpg"); 
+  width: 40vh !important;
+  min-height: 70vh !important;
+  box-shadow: 0px 0px 12px 4px rgb(171, 169, 169);
+}
+form{
+  margin: 4rem 0 1rem 0;
 }
 }
 
